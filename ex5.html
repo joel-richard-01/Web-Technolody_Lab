@@ -1,0 +1,281 @@
+#QN1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Shortest-Longest Word!</h1></legend>
+        String: <input id="string" type="text"><br><br>
+        <button type="submit" onclick="string()">Find</button> <br>
+        <p id="outputmin"></p>
+        <p id="outputmax"></p>
+        <a href="5.2.html">Next question!</a>
+    </fieldset>
+</body>
+</html>
+
+#QN2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Calculate your BMI!</h1></legend>
+        Weight (in kgs): <input id="weight" type="text"><br><br>
+        Height (in cms): <input id="height" type="text"><br><br>
+        <button onclick="bmi()">Calculate</button><br>
+        <p id="bmi"></p>
+        <p id="result"></p>
+        <a href="5.1.html">Previous question!</a>&nbsp;
+        <a href="5.3.html">Next question!</a>
+    </fieldset>
+</body>
+</html>
+
+
+#QN3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Fruit Farm!</h1></legend>
+        Rows: <input id="rows" type="text"><br><br>
+        Columns: <input id="cols" type="text"><br><br>
+        <button onclick="grow()">Plant Garden</button><br><br>
+        <div id="garden"></div><br>
+        <a href="5.2.html">Previous question!</a>&nbsp;
+        <a href="5.4.html">Next question!</a>
+    </fieldset>
+</body>
+</html>
+
+#QN4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Currency Convertor!</h1></legend>
+        Convert <input type="text" id="amt">
+        <select id="from"> 
+            <option value="USD">USD</option> 
+            <option value="INR">INR</option>
+        </select> 
+        to 
+        <select id ="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option> 
+        </select><br><br>
+        <button onclick="convert()">Convert</button><br><br>
+        <span id="answer"></span><br><br>
+        <a href="5.3.html">Previous question!</a>&nbsp;
+        <a href="5.5.html">Next question!</a>
+    </fieldset>
+</body>
+</html>
+
+
+#QN5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Heads or Tails?</h1></legend>
+        <div>
+            <figure><img src="media/toss.png" onclick="flip()" id="coin" height="300px" width="300px"><br>
+            <figcaption style="position: relative; left: 95px;"><small>Click image to toss!</small></figcaption></figure>
+        </div></span>
+        <p> 
+            Heads Total: <span id="num_heads">0</span><br><br>
+            Tails Total: <span id="num_tails">0</span><br><br>
+            <a href="5.4.html">Previous question!</a>&nbsp;
+            <a href="5.6.html">Next question!</a> 
+        </p>
+    </fieldset>
+</body>
+</html>
+
+
+#QN6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Birthday Cake Order Form</h1></legend>
+        # 1/2kg Cakes:&nbsp; <input type="text" id="small"><br><br> 
+        # 1kg Cakes:&nbsp; <input type="text" id="medium"><br><br>
+        # 2kg Cakes:&nbsp; <input type="text" id="large"><br><br> 
+        Tip: 
+        <label><input type="radio" value="10" name="tip">10%</label> 
+        <label><input type="radio" value="15" name="tip" checked="checked">15%</label>
+        <label><input type="radio" value="20" name="tip">20%</label><br><br> 
+        <button id="submit" onclick="bill()">Calculate price</button><br><br>
+        <span id="price"></span><br><br>
+        <a href="5.5.html">Previous question!</a>
+    </fieldset>
+</body>
+</html>
+
+
+#JS CODE
+function string() {
+    var str = document.getElementById("string").value;
+    var l = str.split(' ');
+    
+    var minstr = [];
+    var maxstr = [];
+ 
+    var max = Number.MIN_VALUE;
+    var min = Number.MAX_VALUE;
+ 
+    for (var i = 0; i < l.length; i++) {
+        if (l[i].length < min) min = l[i].length;
+        if (l[i].length > max) max = l[i].length;
+    }
+ 
+    for (var i = 0; i < l.length; i++) {
+        if (l[i].length == min) minstr.push(l[i]);
+        if (l[i].length == max) maxstr.push(l[i]);
+    }
+    
+    document.getElementById("outputmin").innerHTML = "Shortest word(s): " + minstr.toString();
+    document.getElementById("outputmax").innerHTML = "Longest word(s): " + maxstr.toString();
+}
+ 
+function bmi() {
+    var h = parseFloat(document.getElementById("height").value)/100;
+    var w = parseFloat(document.getElementById("weight").value);
+ 
+    var bmi = w / (h * h);
+    var result;
+ 
+    if (bmi < 18) result = "Underweight";
+    else if (bmi >= 18 && bmi < 25) result = "Normal";
+    else if (bmi >= 25 && bmi < 30) result = "Overweight";
+    else result = "Obese";
+ 
+    document.getElementById("bmi").innerHTML = "BMI: " + bmi.toPrecision(4);
+    document.getElementById("result").innerHTML = "Result: You are " + result + "!";
+}
+ 
+function grow() {
+    var r = parseInt(document.getElementById("rows").value);
+    var c = parseInt(document.getElementById("cols").value);
+    var l = ["media/apple.png", "media/orange.png"];
+    //document.getElementById("garden").innerHTML = null;
+    var garden = document.getElementById("garden");
+    
+    for (let i = 0; i < r; i++) {
+        for (let j = 0; j < c; j++) {
+            var fruit = Math.floor(Math.random() * 2);
+            var img = '<img src=' + l[fruit] + ' width = "150px" height = "150px"></img>';
+            garden.innerHTML += img;
+        }garden.innerHTML += "<br>";
+    }
+}
+ 
+function convert() {
+    var amt = parseFloat(document.getElementById("amt").value);
+    var from = document.getElementById("from").value;
+    var to = document.getElementById("to").value;
+    var ans = document.getElementById("answer");
+ 
+    var toINR = 79.97;
+    var toUSD = 0.013;
+    var result;
+    
+    if (from == to) result = amt;
+    else if (from == "USD") result = amt*toINR;
+    else result = amt*toUSD;
+    
+    //alert(result);
+    ans.innerHTML = amt.toString() + " " + from + " = " + result.toString() + " " + to + "!";
+}
+ 
+function flip() {
+    var img = document.getElementById("coin");
+    var head = document.getElementById("num_heads");
+    var tail = document.getElementById("num_tails");
+    var h = parseInt(head.innerHTML);
+    var t = parseInt(tail.innerHTML);
+ 
+    var l = ["head.png", "tail.png"];
+    var s = Math.floor(Math.random()*2);
+    if (l[s]==l[0]) {
+        head.innerHTML = h+1;
+    } else {
+        tail.innerHTML = t+1;
+    };
+    img.src = "media/"+l[s];
+}
+ 
+function bill() {
+    var half = parseInt(document.getElementById("small").value);
+    var one = parseInt(document.getElementById("medium").value);
+    var two = parseInt(document.getElementById("large").value);
+    var total;
+ 
+    var small = 100;
+    var medium = 200;
+    var large = 400;
+ 
+    total = (half*small) + (one*medium) + (two*large);
+    var tax = 0.09 * total;
+    total += tax;
+ 
+    var radio = document.getElementsByName("tip");
+    var tip;
+    for (var i = 0; i < radio.length; i++) {
+        if (radio[i].checked) tip = ((radio[i].value)/100)*total;
+    }
+    total += tip;
+ 
+    document.getElementById("price").innerHTML = "Cost of order: " + total + " rupees!"
+    
+}
