@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Experiment 4
+    </title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ44G1XH7UqG7xlaKyhEtwiVoRPftarEthuw&usqp=CAU" alt="logo" style="width:100px ;height: 100px " ;></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="data:image/jpeg;base64,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">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login/Sign Up</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search Here">
+                <button class="btn btn-primary" type="button">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="cat.jpeg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="pic2.jpeg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="pic3.jpeg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="fox.jpeg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="pic.jpeg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="pic4.jpeg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="pic5.jpeg" alt="New York" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <br>
+    <br>
+
+    <div class="row m-1">
+        <div class="col-sm-6 ">
+
+            <fieldset class="border border-primary p-4">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p></p>
+                        </div>
+                        <div class="col-md-4 text-primary">
+                            <h4>Registration Form</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Email</p>
+                        </div>
+                        <div class="col">
+                            <p>Password</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="" name="email">
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" placeholder="" name="pswd">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Address</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="1234 Main St." name="address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Address2</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apartment, studio or floor" name="address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>City</p>
+                        </div>
+                        <div class="col">
+                            <p>State</p>
+                        </div>
+                        <div class="col">
+                            <p>Zip</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="" name="city">
+                        </div>
+                        <div class="col">
+                            <input type="dropdown" class="form-control" placeholder="choose" name="state">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="" name="zip">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+        </div>
+        </fieldset>
+
+        <div class="col-sm-6">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Reg.No</th>
+                        <th>Name of the Participant</th>
+                        <th>Collaborative activity</th>
+                        <th>Collaborating Agency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>URK20CS2091</td>
+                        <td>JOEL</td>
+                        <td>Design and Analysis</td>
+                        <td>AI</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>URK20CS2092</td>
+                        <td>HERMES</td>
+                        <td>Design and Analysis</td>
+                        <td>DS</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>URK20CS2106</td>
+                        <td>SATHISH</td>
+                        <td>Product Design and Analysis</td>
+                        <td>ML</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>URK20CS3013</td>
+                        <td>SHURVESH</td>
+                        <td>Product Design and Analysis</td>
+                        <td>AI &amp DS</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>URK20CS5050</td>
+                        <td>SURESH</td>
+                        <td>Product Design and Analysis</td>
+                        <td>CADD Center</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>URK20CS2777</td>
+                        <td>KUMAR</td>
+                        <td>Product Design and Analysis</td>
+                        <td>CADD Center</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>URK20CS5703</td>
+                        <td>RAM</td>
+                        <td>Product Design and Analysis</td>
+                        <td>CADD Center</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
