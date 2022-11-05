@@ -1,0 +1,194 @@
+7-1:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moving Car</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(document).keydown(function(event){
+                    var car = $('#car')
+                    var arrow = {left: 37, up: 38, right: 39, down: 40 };
+                    
+                    switch(event.which){
+                        case arrow.right: car.css('transform','rotate(360deg)');
+                                          car.animate({left:'+=5px'},1); 
+                                          break;
+                        case arrow.down:  car.css('transform','rotate(90deg)');
+                                          car.animate({top:'+=5px'},1);
+                                          break;
+                        case arrow.up:    car.css('transform','rotate(270deg)');
+                                          car.animate({top:'-=5px'},1);
+                                          break;
+                        case arrow.left:  car.css('transform','rotateY(180deg)');
+                                          car.animate({left:'-=5px'},1);
+                                          break;
+                    }
+                    var car = $('#car');
+            var car_pos = $('#car').position();
+            var l = car_pos.left;
+            var t = car_pos.top;
+
+            
+
+            if (l > 0 && l < 268  ) {
+                if(t < 85 || t >250)
+                    {
+                        $('#car').fadeOut('slow');
+                        $('#car').fadeIn('slow');  
+                    }
+            }
+            if (l >470) {
+                if(t < 85 || t >250)
+                    {
+                        $('#car').fadeOut('slow');
+                        $('#car').fadeIn('slow');  
+                    }
+            }
+            
+            })
+        })
+        </script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            .r1 {
+                  position: fixed;
+                  z-index: 0;
+                  top:0px;
+                  width: 200px;
+                  height: 800px;
+                  left: 40%;
+                  background-color: black;
+            }
+            .r2{
+                position: fixed;
+                top:100px;
+                z-index: 1;
+                width: 100%;
+                height: 200px;
+                background-color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="car" style="position:absolute;z-index:3;left:5px; top:100px;width:80px;height:50px;">
+            <img id="car" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_hpK-TeMUY2YYvlgZpJluh3c61--S4HLqA&usqp=CAU" alt="" width="80" height="50">
+        </div>
+        <br>
+        <div class="r1"></div>
+        <div class="r2"></div>
+  
+    </body>
+    
+
+</html>
+
+
+ex7-2:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <h1>Registration Form</h1>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+        </script>
+        <style>
+            .ancestors * { 
+              display: block;
+              border: 2px solid rgb(189, 15, 15);
+              color: rgb(217, 35, 35);
+              padding: 5px;
+              margin: 15px;
+            }
+            </style>
+        <script>
+            $(document).ready(function(){
+                $("#add").click(function(){
+                    $('#out').append("Name : " + $('#name').val() + "<br>Reg.No : " + $('#Reg').val() + "<br>");
+                   
+                });
+
+                $("#remove").click(function(){
+                    $("#div").remove()
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        Name :   &nbsp; &nbsp;    <input type="text" id="name"><br><br>
+        Reg.No. : <input type="text" id="Reg"><br><br>
+        
+
+        <div class="ancestors" id="div">
+           
+            <p id="out"> </p>
+        </div>
+
+    <button id="add">Append text</button>
+    <button id="remove">Remove text</button>
+    </body>
+</html>
+
+
+ex7-3:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .trapezoid{
+                border-bottom: 50px solid #555;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                height: 0;
+                width: 125px;
+
+            }
+
+            .circle{
+                height: 50px;
+                width: 50px;
+                background-color:rgb(15, 26, 26);
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .rectangle{
+                height: 50px;
+                width: 250px;
+                background-color: rgb(168, 170, 51);
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h2>Car</h2>
+
+        <div class="trapezoid"></div>
+        <div class="rectangle"></div>
+
+        <div class="circle"></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="circle"></div>
+    </body>
+</html>
+
+
